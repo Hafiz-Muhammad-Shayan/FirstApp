@@ -1,14 +1,15 @@
-import 'package:figmadesignui/scrn6.dart';
-import 'package:figmadesignui/scrn9.dart';
+import 'package:figmadesignui/scrn10.dart';
+import 'package:figmadesignui/scrn12.dart';
+import 'package:figmadesignui/scrn4.dart';
 import 'package:flutter/material.dart';
-class Scrn5 extends StatefulWidget {
-  const Scrn5({super.key});
+class Scrn11 extends StatefulWidget {
+  const Scrn11({super.key});
 
   @override
-  State<Scrn5> createState() => _Scrn5State();
+  State<Scrn11> createState() => _Scrn11State();
 }
 
-class _Scrn5State extends State<Scrn5> {
+class _Scrn11State extends State<Scrn11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -160,7 +161,7 @@ class _Scrn5State extends State<Scrn5> {
                   children: [
                     InkWell(
                         child: Text(
-                            "Didn't receive any code?",
+                          "Didn't receive any code?",
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 12,
@@ -169,12 +170,12 @@ class _Scrn5State extends State<Scrn5> {
                         )),
                     InkWell(
                         child: Text(
-                            " Resend in 01:00",
-                            style: TextStyle(
-                              color: Colors.red,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                            ),
+                          " Resend in 01:00",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                          ),
                         )),
                   ],
                 ),
@@ -194,7 +195,7 @@ class _Scrn5State extends State<Scrn5> {
                     onPressed: (){
                       Navigator.push(
                           context, MaterialPageRoute(
-                        builder: (context) => Scrn6(),));
+                        builder: (context) => Scrn12(),));
                     },
                     child: Text(
                       "Next",
@@ -208,34 +209,34 @@ class _Scrn5State extends State<Scrn5> {
               Padding(
                 padding: const EdgeInsets.only(left: 55,top: 30,bottom: 50),
                 child: InkWell(
-                      child: Row(
-                        children: [
-                          Text(
-                            "Already have an account?",
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                          Text(
-                            " Sign In",
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xFF006175),
-                            ),
-                          ),
-                        ],
+                  child: Row(
+                    children: [
+                      Text(
+                        "Already have an account?",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
-                      onTap: (){
-                        Navigator.push(
-                            context, MaterialPageRoute(
-                          builder: (context) => Scrn9(),));
-                      },
-                    ),
-
-
+                      Text(
+                        " Sign In",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF006175),
+                        ),
+                      ),
+                    ],
+                  ),
+                  onTap: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                      builder: (context) => Scrn4(),));
+                  },
                 ),
+
+
+              ),
             ],
           ),
         ),

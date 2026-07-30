@@ -1,4 +1,5 @@
 import 'package:figmadesignui/scrn3.dart';
+import 'package:figmadesignui/scrn9.dart';
 import 'package:flutter/material.dart';
 
 class Scrn2 extends StatefulWidget {
@@ -110,7 +111,10 @@ class _Scrn2State extends State<Scrn2> {
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => Scrn3(),));
+                      },
                       child: Text(
                         "Skip",
                         style: TextStyle(
@@ -123,28 +127,31 @@ class _Scrn2State extends State<Scrn2> {
 
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 45,vertical: 30),
-                  child: Row(
-                    children: [
-                      InkWell(
-                        child: Text(
+                  child: InkWell(
+                    child: Row(
+                      children: [
+                        Text(
                           "Already have an account?",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        onTap: (){},
-                      ),
-                      Text(
-                        " Sign In",
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.grey,
+                        Text(
+                          " Sign In",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.grey,
+                          ),
                         ),
-                      ),
-
-                    ],
+                      ],
+                    ),
+                    onTap: (){
+                      Navigator.push(
+                          context, MaterialPageRoute(
+                        builder: (context) => Scrn9(),));
+                    },
                   ),
                 ),
               ],

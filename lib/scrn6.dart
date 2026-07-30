@@ -1,4 +1,5 @@
 import 'package:figmadesignui/scrn7.dart';
+import 'package:figmadesignui/scrn9.dart';
 import 'package:flutter/material.dart';
 
 class Scrn6 extends StatefulWidget {
@@ -324,29 +325,34 @@ class _Scrn6State extends State<Scrn6> {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 55,top: 30,bottom: 50),
-                child: Row(
-                  children: [
-                    InkWell(
-                      child: Text(
+                child: InkWell(
+                  child: Row(
+                    children: [
+                      Text(
                         "Already have an account?",
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      onTap: (){},
-                    ),
-                    Text(
-                      " Sign In",
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFF006175),
+                      Text(
+                        " Sign In",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF006175),
+                        ),
                       ),
-                    ),
-
-                  ],
+                    ],
+                  ),
+                  onTap: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                      builder: (context) => Scrn9(),));
+                  },
                 ),
+
+
               ),
 
 

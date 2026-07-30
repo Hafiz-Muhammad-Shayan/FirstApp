@@ -1,13 +1,14 @@
+import 'package:figmadesignui/scrn14.dart';
 import 'package:figmadesignui/scrn9.dart';
 import 'package:flutter/material.dart';
-class Scrn8 extends StatefulWidget {
-  const Scrn8({super.key});
+class Scrn13 extends StatefulWidget {
+  const Scrn13({super.key});
 
   @override
-  State<Scrn8> createState() => _Scrn8State();
+  State<Scrn13> createState() => _Scrn13State();
 }
 
-class _Scrn8State extends State<Scrn8> {
+class _Scrn13State extends State<Scrn13> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,11 +29,11 @@ class _Scrn8State extends State<Scrn8> {
               ),
             ),
             Text(
-              "Welcome",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
+              "Welcome back",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
             ),
             Spacer(),
             Padding(
@@ -49,7 +50,7 @@ class _Scrn8State extends State<Scrn8> {
                   onPressed: (){
                     Navigator.push(
                         context, MaterialPageRoute(
-                      builder: (context) => Scrn9(),));
+                      builder: (context) => Scrn14(),));
                   },
                   child: Text(
                     "Continue",
