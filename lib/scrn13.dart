@@ -21,7 +21,7 @@ class _Scrn13State extends State<Scrn13> {
               child: Container(
                 height: 400,
                 width: MediaQuery.of(context).size.width * 1,
-                color: Colors.red,
+                // color: Colors.red,
                 child: Image.asset(
                   "assets/images/pic4.png",
                   fit: BoxFit.cover,
