@@ -1,13 +1,16 @@
+import 'package:figmadesignui/scrn15.dart';
 import 'package:flutter/material.dart';
-
+import 'package:figmadesignui/card_widget.dart';
 import 'card_widget.dart';
 import 'post.dart';
+ String imageUrl = "assets/images/pic5.png";
 class Scrn14 extends StatefulWidget {
   const Scrn14({super.key});
 
   @override
   State<Scrn14> createState() => _Scrn14State();
 }
+
 
 class _Scrn14State extends State<Scrn14> {
   @override
@@ -130,12 +133,18 @@ class _Scrn14State extends State<Scrn14> {
                           img: "assets/images/pic5.png" ,
                           circleImg: "assets/images/pic6.png",
                           text: "Abdul",
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn15(image: AssetImage("assets/images/pic5.png")),));
+                          },
                         ),
                         SizedBox(width: 10,),
                         CardWidget(
                           img: "assets/images/pic6.png",
                           circleImg: "assets/images/pic5.png",
                           text: "Chris",
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn15(image: AssetImage("assets/images/pic6.png")),));
+                          },
                         ),
                         SizedBox(width: 10,),
 
@@ -143,6 +152,9 @@ class _Scrn14State extends State<Scrn14> {
                           img: "assets/images/pic5.png",
                           circleImg: "assets/images/pic6.png",
                           text: "General",
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn15(image: AssetImage("assets/images/pic5.png")),));
+                          },
                         ),
                         SizedBox(width: 10,),
 
@@ -150,6 +162,9 @@ class _Scrn14State extends State<Scrn14> {
                           img: "assets/images/pic6.png",
                           circleImg: "assets/images/pic5.png",
                           text: "Ojagbon",
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn15(image: AssetImage("assets/images/pic6.png")),));
+                          },
                         ),
                         SizedBox(width: 10,),
 
@@ -157,6 +172,9 @@ class _Scrn14State extends State<Scrn14> {
                           img: "assets/images/pic5.png",
                           circleImg: "assets/images/pic6.png",
                           text: "Abdul",
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn15(image: AssetImage("assets/images/pic5.png")),));
+                          },
                         ),
 
                         SizedBox(
@@ -193,35 +211,6 @@ class _Scrn14State extends State<Scrn14> {
         ),
       ),
     ),
-      bottomNavigationBar: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.1,
-        width: MediaQuery.of(context).size.width * 1,
-
-        child: BottomNavigationBar(
-
-            items: [
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.home,color: Color(0xFF006175),),
-                label: "Home",
-              ),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.incomplete_circle,color: Colors.black,),
-                label: "Home",
-              ),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.add_box_outlined,color: Colors.black,),
-                label: "Home",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.chat,color: Colors.black,),
-                label: "Home",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.person_3_rounded,color: Colors.black,),
-                label: "Home",
-              ),
-            ]),
-      ),
     );
   }
 }

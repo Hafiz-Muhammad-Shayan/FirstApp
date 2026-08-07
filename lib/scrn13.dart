@@ -1,3 +1,4 @@
+import 'package:figmadesignui/main_navigator.dart';
 import 'package:figmadesignui/scrn14.dart';
 import 'package:figmadesignui/scrn9.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +51,7 @@ class _Scrn13State extends State<Scrn13> {
                   onPressed: (){
                     Navigator.push(
                         context, MaterialPageRoute(
-                      builder: (context) => Scrn14(),));
+                      builder: (context) => MainNavigator(),));
                   },
                   child: Text(
                     "Continue",
