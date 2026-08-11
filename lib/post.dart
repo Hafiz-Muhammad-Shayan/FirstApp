@@ -1,3 +1,4 @@
+import 'package:figmadesignui/scrn17.dart';
 import 'package:flutter/material.dart';
 
 class Post extends StatefulWidget {
@@ -73,79 +74,95 @@ class _PostState extends State<Post> {
             SizedBox(
               height: 10,
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/pic8.png",
-                    fit: BoxFit.fill,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Scrn17(),));
+              },
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Image.asset(
+                      "assets/images/pic8.png",
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             SizedBox(
               height: 5,
             ),
 
-            Row(
-              children: [
-                Stack(
-                  clipBehavior: Clip.none,
-                  children: [
-                    CircleAvatar(
-                      radius: 11,
-                      backgroundImage: AssetImage(
-                        "assets/images/pic9.png",
-                      ),
-                    ),
-                    Positioned(
-                      left:12,
-                      child: CircleAvatar(
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Scrn17(),));
+              },
+              child: Row(
+                children: [
+                  Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      CircleAvatar(
                         radius: 11,
                         backgroundImage: AssetImage(
-                          "assets/images/pic10.png",
+                          "assets/images/pic9.png",
                         ),
                       ),
-                    ),
-                    Positioned(
-                      left: 22,
-                      child: CircleAvatar(
-                        radius: 11,
-                        backgroundImage: AssetImage(
-                          "assets/images/pic11.png",
+                      Positioned(
+                        left:12,
+                        child: CircleAvatar(
+                          radius: 11,
+                          backgroundImage: AssetImage(
+                            "assets/images/pic10.png",
+                          ),
                         ),
                       ),
-                    ),
+                      Positioned(
+                        left: 22,
+                        child: CircleAvatar(
+                          radius: 11,
+                          backgroundImage: AssetImage(
+                            "assets/images/pic11.png",
+                          ),
+                        ),
+                      ),
 
 
 
-                  ],
-                ),
-                Spacer(),
-                InkWell(
-                  onTap: (){
-                    setState(() {
-                      isFavorate = !isFavorate;
-                    });
-                  },
-                    child: Icon(
-                  Icons.favorite,size: 18,color: isFavorate ? Colors.white: Colors.red,
-                )),
-                SizedBox(
-                  width: 5,
-                ),
+                    ],
+                  ),
+                  Spacer(),
+                  InkWell(
+                    onTap: (){
+                      setState(() {
+                        isFavorate = !isFavorate;
+                      });
+                    },
+                      child: Icon(
+                    Icons.favorite,size: 18,color: isFavorate ? Colors.white: Colors.red,
+                  )),
+                  SizedBox(
+                    width: 5,
+                  ),
 
-                Text("247"),
-                 SizedBox(
-                   width: 10,
-                 ),
-                 Icon(Icons.chat_bubble,size: 18,),
-                SizedBox(
-                  width: 5,
-                ),
+                  Text("247"),
+                   SizedBox(
+                     width: 10,
+                   ),
+                   Icon(Icons.chat_bubble,size: 18,),
+                  SizedBox(
+                    width: 5,
+                  ),
 
-                Text("57"),
-              ],
+                  Text("57"),
+                ],
+              ),
             ),
             SizedBox(
               height: 3,

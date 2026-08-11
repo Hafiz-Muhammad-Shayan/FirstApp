@@ -1,6 +1,8 @@
 import 'package:figmadesignui/scrn14.dart';
 import 'package:figmadesignui/scrn15.dart';
+import 'package:figmadesignui/scrn16.dart';
 import 'package:flutter/material.dart';
+
 
 class MainNavigator extends StatefulWidget {
   const MainNavigator({super.key});
@@ -19,6 +21,9 @@ class _MainNavigatorState extends State<MainNavigator> {
     Scrn14(),
 
   ];
+  // openNotificationScn(){
+  //   Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn16(),));
+  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

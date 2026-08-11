@@ -1,5 +1,7 @@
 
+import 'package:figmadesignui/main_navigator.dart';
 import 'package:figmadesignui/scrn1.dart';
+import 'package:figmadesignui/scrn16.dart';
 import 'package:flutter/material.dart';
 
 class Splashscrn extends StatefulWidget {
@@ -18,7 +20,7 @@ class _SplashscrnState extends State<Splashscrn> {
     await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
       context, MaterialPageRoute(
-        builder: (context) => Scrn1(),));
+        builder: (context) => MainNavigator(),));
   }
 
   @override

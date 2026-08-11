@@ -1,4 +1,10 @@
+import 'package:figmadesignui/main_navigator.dart';
+import 'package:figmadesignui/scrn10.dart';
+import 'package:figmadesignui/scrn11.dart';
+import 'package:figmadesignui/scrn12.dart';
+import 'package:figmadesignui/scrn13.dart';
 import 'package:figmadesignui/scrn15.dart';
+import 'package:figmadesignui/scrn16.dart';
 import 'package:flutter/material.dart';
 import 'package:figmadesignui/card_widget.dart';
 import 'card_widget.dart';
@@ -11,11 +17,13 @@ class Scrn14 extends StatefulWidget {
   State<Scrn14> createState() => _Scrn14State();
 }
 
-
 class _Scrn14State extends State<Scrn14> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+
     body:SafeArea(
       child: SizedBox(
         height: MediaQuery.of(context).size.height * 0.9,
@@ -56,7 +64,9 @@ class _Scrn14State extends State<Scrn14> {
                     Spacer(),
 
                     IconButton(
-                        onPressed: (){},
+                        onPressed: (){
+                          // MainNavigator.openNotificationScn();
+                        },
                         icon: Icon(
                             Icons.notifications_none,
                         color: Color(0xFF006175),
@@ -211,6 +221,12 @@ class _Scrn14State extends State<Scrn14> {
         ),
       ),
     ),
+
+
+
+      
+
+
     );
   }
 }
