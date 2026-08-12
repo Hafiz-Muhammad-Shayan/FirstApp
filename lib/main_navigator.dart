@@ -1,6 +1,7 @@
 import 'package:figmadesignui/scrn14.dart';
 import 'package:figmadesignui/scrn15.dart';
 import 'package:figmadesignui/scrn16.dart';
+import 'package:figmadesignui/scrn20.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,7 +16,7 @@ class _MainNavigatorState extends State<MainNavigator> {
   int _index = 0;
   final screens = [
     Scrn14(),
-    Scrn14(),
+    Scrn20(),
     Scrn14(),
     Scrn14(),
     Scrn14(),

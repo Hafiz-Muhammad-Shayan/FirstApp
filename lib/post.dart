@@ -167,53 +167,69 @@ class _PostState extends State<Post> {
             SizedBox(
               height: 3,
             ),
-            Row(
-              children: [
-                Text(
-                  "Liked by",
-                  style: TextStyle(
-                    fontSize: 10,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Scrn17(),));
+              },
+              child: Row(
+                children: [
+                  Text(
+                    "Liked by",
+                    style: TextStyle(
+                      fontSize: 10,
+                    ),
                   ),
-                ),
-                Text(
-                    " Blazinshado",
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold,
+                  Text(
+                      " Blazinshado",
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Text(
-                  " and",
-                  style: TextStyle(
-                    fontSize: 10,
+                  Text(
+                    " and",
+                    style: TextStyle(
+                      fontSize: 10,
+                    ),
                   ),
-                ),
-                Text(
-                    " 100+",
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold,
-                  ),),
-                Text(
-                  " others",
-                  style: TextStyle(
-                    fontSize: 10,
+                  Text(
+                      " 100+",
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  Text(
+                    " others",
+                    style: TextStyle(
+                      fontSize: 10,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             SizedBox(
               height: 2,
             ),
-            Row(
-              children: [
-                Text(
-                  "View all 57 comments",
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w300,
-                  ),),
-              ],
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Scrn17(),));
+              },
+              child: Row(
+                children: [
+                  Text(
+                    "View all 57 comments",
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w300,
+                    ),),
+                ],
+              ),
             ),
           ],
         ),

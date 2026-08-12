@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ChatlistbuilderWidget2 extends StatelessWidget {
+class ChatlistbuilderWidget2 extends StatefulWidget {
   final String imgCircle;
   final String titleTxt1;
   final String subTitleTxt;
@@ -18,6 +18,12 @@ class ChatlistbuilderWidget2 extends StatelessWidget {
   });
 
   @override
+  State<ChatlistbuilderWidget2> createState() => _ChatlistbuilderWidget2State();
+}
+
+class _ChatlistbuilderWidget2State extends State<ChatlistbuilderWidget2> {
+  bool isFavorate = true;
+  @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(bottom: 5),
@@ -27,7 +33,7 @@ class ChatlistbuilderWidget2 extends StatelessWidget {
             CircleAvatar(
               radius: 17,
               backgroundImage: AssetImage(
-                "$imgCircle",
+                "${widget.imgCircle}",
               ),
             ),
             SizedBox(
@@ -36,21 +42,31 @@ class ChatlistbuilderWidget2 extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.favorite,size: 15,),
+                InkWell(
+                  onTap: (){
+                    setState(() {
+                      isFavorate = !isFavorate;
+                    });
+                  },
+                    child: Icon(
+                      Icons.favorite,
+                      color: isFavorate ? Colors.white : Colors.red,
+                      size: 15,
+                    )),
                 Text(" 25"),
               ],
             ),
           ],
         ),
         title: Text(
-          "$titleTxt1",
+          "${widget.titleTxt1}",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 15,
           ),
         ),
         subtitle: Text(
-          "$subTitleTxt",
+          "${widget.subTitleTxt}",
           style: TextStyle(
             fontSize: 8,
             color: Colors.grey,
@@ -59,7 +75,7 @@ class ChatlistbuilderWidget2 extends StatelessWidget {
         ),
         trailing: Column(
           children: [
-            Text("$timeTxt"),
+            Text("${widget.timeTxt}"),
           ],
         ),
       ),
