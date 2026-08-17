@@ -31,7 +31,7 @@ class _ChatlistbuilderWidget2State extends State<ChatlistbuilderWidget2> {
         leading: Column(
           children: [
             CircleAvatar(
-              radius: 17,
+              radius: 15,
               backgroundImage: AssetImage(
                 "${widget.imgCircle}",
               ),

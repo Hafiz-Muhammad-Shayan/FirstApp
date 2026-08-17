@@ -27,6 +27,7 @@ class _Scrn17State extends State<Scrn17> {
                 children: [
                   IconButton(
                       onPressed: (){
+                        Navigator.pop(context);
                       },
                       icon: Icon(Icons.arrow_back_ios)),
                   Spacer(),

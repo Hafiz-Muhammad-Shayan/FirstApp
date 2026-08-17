@@ -1,3 +1,4 @@
+import 'package:figmadesignui/chat_scrn.dart';
 import 'package:figmadesignui/scrn14.dart';
 import 'package:figmadesignui/scrn15.dart';
 import 'package:figmadesignui/scrn16.dart';
@@ -18,7 +19,7 @@ class _MainNavigatorState extends State<MainNavigator> {
     Scrn14(),
     Scrn20(),
     Scrn14(),
-    Scrn14(),
+    ChatScrn(),
     Scrn14(),
 
   ];
