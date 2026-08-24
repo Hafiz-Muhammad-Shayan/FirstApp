@@ -38,7 +38,6 @@ class _MainNavigatorState extends State<MainNavigator> {
         width: MediaQuery.of(context).size.width * 1,
 
         child: BottomNavigationBar(
-          // backgroundColor: Colors.blue,
           currentIndex: _index,
             onTap: (value) {
               setState(() {

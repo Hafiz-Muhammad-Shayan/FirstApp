@@ -57,7 +57,6 @@ class _Scrn12State extends State<Scrn12> {
                       ],
                     ),
                   ),
-          
                   Padding(
                     padding: EdgeInsets.only(top: 10),
                     child: Row(
@@ -75,27 +74,14 @@ class _Scrn12State extends State<Scrn12> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Color(0xFF006175),
-                            width: 1,
-          
-          
-                          ),
-                          borderRadius: BorderRadius.circular(11)
-                      ),
-                      child: TextFormField(
-                        keyboardType: TextInputType.visiblePassword,
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFF2F2F2),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            // borderSide: BorderSide(
-                            //   width: 20,
-                            // ),
-                          ),
+                    child: TextFormField(
+                      keyboardType: TextInputType.visiblePassword,
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Color(0xFFF2F2F2),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide.none,
                         ),
                       ),
                     ),
@@ -117,32 +103,18 @@ class _Scrn12State extends State<Scrn12> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Color(0xFF006175),
-                            width: 1,
-          
-          
-                          ),
-                          borderRadius: BorderRadius.circular(11)
-                      ),
-                      child: TextFormField(
-                        keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFF2F2F2),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            // borderSide: BorderSide(
-                            //   width: 20,
-                            // ),
-                          ),
+                    child: TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Color(0xFFF2F2F2),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide.none,
                         ),
                       ),
                     ),
                   ),
-          
                   Spacer(),
                   Padding(
                     padding: const EdgeInsets.only(top: 0),
@@ -150,7 +122,7 @@ class _Scrn12State extends State<Scrn12> {
                         style: ElevatedButton.styleFrom(
                           overlayColor: Color(0xFF006175),
                           backgroundColor: Color(0xFF006175),
-                          padding: EdgeInsets.symmetric(horizontal: 138,vertical: 12),
+                          padding: EdgeInsets.symmetric(horizontal: 138,vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),

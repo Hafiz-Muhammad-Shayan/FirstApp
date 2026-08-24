@@ -21,7 +21,7 @@ class _SplashscrnState extends State<Splashscrn> {
     await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
       context, MaterialPageRoute(
-        builder: (context) => MainNavigator(),));
+        builder: (context) => Scrn1(),));
   }
 
   @override

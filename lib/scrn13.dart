@@ -38,12 +38,12 @@ class _Scrn13State extends State<Scrn13> {
             ),
             Spacer(),
             Padding(
-              padding: const EdgeInsets.only(bottom: 210),
+              padding: const EdgeInsets.only(bottom: 190),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     overlayColor: Color(0xFF006175),
                     backgroundColor: Color(0xFF006175),
-                    padding: EdgeInsets.symmetric(horizontal: 138,vertical: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 138,vertical: 20),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),

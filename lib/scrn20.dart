@@ -1,10 +1,17 @@
+import 'package:figmadesignui/bottmshtCtnt.dart';
+import 'package:figmadesignui/main_navigator.dart';
 import 'package:flutter/material.dart';
 
 import 'blueCard.dart';
 
-class Scrn20 extends StatelessWidget {
+class Scrn20 extends StatefulWidget {
   const Scrn20({super.key});
 
+  @override
+  State<Scrn20> createState() => _Scrn20State();
+}
+
+class _Scrn20State extends State<Scrn20> {
   void show1(BuildContext context){
     showModalBottomSheet(
         context: context,
@@ -175,6 +182,7 @@ class Scrn20 extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
+                // 361  695
                 Row(
                   children: [
                     Padding(
@@ -188,11 +196,11 @@ class Scrn20 extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 10),
+                  padding: const EdgeInsets.only(top: 10,left: 10,right: 0),
                   child: Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 120),
+                        padding: const EdgeInsets.only(left: 115),
                         child: Column(
                           children: [
                               CircleAvatar(
@@ -202,7 +210,7 @@ class Scrn20 extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(
-                                height: 10,
+                                height: 5,
                               ),
                               Text(
                                   "Oyin Dolapo",
@@ -210,25 +218,78 @@ class Scrn20 extends StatelessWidget {
                                 fontSize: 13,
                                 fontWeight: FontWeight.bold,
                               ),),
+                              Text(
+                              "Host",
+                              style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold,
+                              ),),
+
                           ],
                         ),
                       ),
+                      Spacer(),
                       Padding(
-                        padding: const EdgeInsets.only(left: 10),
+                        padding: const EdgeInsets.only(bottom: 30),
                         child: Column(
                           children: [
                             SizedBox(
                               height: 10,
                             ),
                             CircleAvatar(
-                              radius: 15,
+                              radius: 10,
                               backgroundColor: Color(0xFF006175),
-                              child: Icon(Icons.volume_off,color: Colors.white,size: 20,),
+                              child: Icon(
+                                Icons.volume_off,
+                                color: Colors.white,
+                                size: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                                "Mic is off",
+                              style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             SizedBox(
                               height: 10,
                             ),
-                            Text("Mic is off"),
+
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10,bottom: 30),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 10,
+                            ),
+                            CircleAvatar(
+                              radius: 10,
+                              backgroundColor: Color(0xFF006175),
+                              child: Icon(
+                                Icons.mic,
+                                color: Colors.white,
+                                size: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              "Record",
+                              style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                             SizedBox(
                               height: 10,
                             ),
@@ -237,12 +298,179 @@ class Scrn20 extends StatelessWidget {
                         ),
                       ),
 
+
+
                     ],
                   ),
                 ),
-                Spacer(),
+                Expanded(
+                  child: Container(
+                      height: 100,
+                      // width: 20,
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm3.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm4.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm2.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm3.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm2.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm3.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm4.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm2.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm3.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm4.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm2.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm3.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm2.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm3.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm4.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm2.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                                Bottmshtctnt(
+                                  img1: "assets/images/btm1.png",
+                                  txt1: "Chris",
+                                  txt2: "Listner",
+                                ),
+                              ],
+                            ),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                ),
+
                 Padding(
-                  padding: const EdgeInsets.only(top: 0,bottom: 30),
+                  padding: const EdgeInsets.only(top: 30,bottom: 20),
                   child: Expanded(
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
@@ -255,9 +483,11 @@ class Scrn20 extends StatelessWidget {
                         ),
                         onPressed: (){
                           // show(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
                         },
                         child: Text(
-                          "Create",
+                          "Stop",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -275,7 +505,6 @@ class Scrn20 extends StatelessWidget {
     );
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -291,6 +520,8 @@ class Scrn20 extends StatelessWidget {
                     children: [
                       IconButton(
                           onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => MainNavigator(),));
                           },
                           icon: Icon(Icons.arrow_back_ios)),
                       Spacer(),
@@ -395,7 +626,7 @@ class Scrn20 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 580,
+              top: 530,
               left: 280,
               child: FloatingActionButton(
                 backgroundColor: Color(0xFF006175),
@@ -403,10 +634,10 @@ class Scrn20 extends StatelessWidget {
                   show1(context);
                 },
                 child: Icon(Icons.add_card_outlined,color: Colors.white,),
-              
+
               ),
             ),
-            
+
           ],
         ),
       ),

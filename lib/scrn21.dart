@@ -113,7 +113,7 @@ class _Scrn21State extends State<Scrn21> {
                           style: ElevatedButton.styleFrom(
                             overlayColor: Color(0xFF006175),
                             backgroundColor: Color(0xFF006175),
-                            padding: EdgeInsets.symmetric(horizontal: 110,vertical: 20),
+                            padding: EdgeInsets.symmetric(horizontal: 110,vertical: 15),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),

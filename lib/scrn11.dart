@@ -94,7 +94,7 @@ class _Scrn11State extends State<Scrn11> {
                       style: ElevatedButton.styleFrom(
                         overlayColor: Color(0xFF006175),
                         backgroundColor: Color(0xFF006175),
-                        padding: EdgeInsets.symmetric(horizontal: 140,vertical: 12),
+                        padding: EdgeInsets.symmetric(horizontal: 140,vertical: 20),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),

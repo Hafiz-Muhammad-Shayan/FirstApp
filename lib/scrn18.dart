@@ -1,5 +1,6 @@
 import 'package:figmadesignui/main_navigator.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class Scrn18 extends StatefulWidget {
   const Scrn18({super.key});
@@ -89,12 +90,26 @@ class _Scrn18State extends State<Scrn18> {
                         filled: true,
                         suffixIcon: Padding(
                           padding: const EdgeInsets.only(top: 90),
-                          child: IconButton(
-                              onPressed: (){},
-                              icon: Icon(
-                                Icons.add_box_outlined,
-                                size: 30,
-                              )),
+                          child: InkWell(
+                            onTap: () async {
+                              final image = await ImagePicker()
+                                  .pickImage(
+                                source: ImageSource.camera,
+                              );
+
+                              if (image != null) {
+                                print(image.path);
+                              }
+                              // Navigator.push(
+                              //     context, MaterialPageRoute(
+                              //   builder: (context) => Scrn18(),
+                              // ));
+                            },
+                            child: Icon(
+                                  Icons.add_box_outlined,
+                                  size: 30,
+                                ),
+                          ),
                         ),
                         fillColor: Color(0xFFF2F2F2),
                         border: OutlineInputBorder(

@@ -26,7 +26,9 @@ class _Scrn6State extends State<Scrn6> {
                   Row(
                     children: [
                       IconButton(
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.pop(context);
+                          },
                           icon: Icon(Icons.arrow_back_ios)),
                     ],
                   ),
@@ -73,27 +75,17 @@ class _Scrn6State extends State<Scrn6> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            color: Color(0xFF006175),
-                          width: 1,
-        
-        
-                        ),
-                        borderRadius: BorderRadius.circular(11)
-                      ),
-                      child: TextFormField(
-                        keyboardType: TextInputType.name,
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFF2F2F2),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            // borderSide: BorderSide(
-                            //   width: 20,
-                            // ),
-                          ),
+                    child: TextFormField(
+                      keyboardType: TextInputType.name,
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Color(0xFFF2F2F2),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide.none,
+                          borderRadius: BorderRadius.circular(10),
+                          // borderSide: BorderSide(
+                          //   width: 20,
+                          // ),
                         ),
                       ),
                     ),
@@ -115,27 +107,14 @@ class _Scrn6State extends State<Scrn6> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Color(0xFF006175),
-                            width: 1,
-        
-        
-                          ),
-                          borderRadius: BorderRadius.circular(11)
-                      ),
-                      child: TextFormField(
-                        keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFF2F2F2),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            // borderSide: BorderSide(
-                            //   width: 20,
-                            // ),
-                          ),
+                    child: TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Color(0xFFF2F2F2),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide.none,
                         ),
                       ),
                     ),
@@ -162,12 +141,12 @@ class _Scrn6State extends State<Scrn6> {
                               width: 131,
                               height: 49,
                               decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Color(0xFF006175),
-                                    width: 1,
-        
-        
-                                  ),
+                                  // border: Border.all(
+                                  //   color: Color(0xFF006175),
+                                  //   width: 1,
+                                  //
+                                  //
+                                  // ),
                                   borderRadius: BorderRadius.circular(11)
                               ),
                               child: TextFormField(
@@ -181,9 +160,7 @@ class _Scrn6State extends State<Scrn6> {
                                   fillColor: Color(0xFFF2F2F2),
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    // borderSide: BorderSide(
-                                    //   width: 20,
-                                    // ),
+                                    borderSide: BorderSide.none,
                                   ),
                                 ),
                               ),
@@ -218,12 +195,12 @@ class _Scrn6State extends State<Scrn6> {
                                   width: 131,
                                   height: 49,
                                   decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Color(0xFF006175),
-                                        width: 1,
-        
-        
-                                      ),
+                                      // border: Border.all(
+                                      //   color: Color(0xFF006175),
+                                      //   width: 1,
+                                      //
+                                      //
+                                      // ),
                                       borderRadius: BorderRadius.circular(11)
                                   ),
                                   child: TextFormField(
@@ -237,9 +214,7 @@ class _Scrn6State extends State<Scrn6> {
                                       fillColor: Color(0xFFF2F2F2),
                                       border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(10),
-                                        // borderSide: BorderSide(
-                                        //   width: 20,
-                                        // ),
+                                        borderSide: BorderSide.none,
                                       ),
                                     ),
                                   ),
@@ -275,12 +250,12 @@ class _Scrn6State extends State<Scrn6> {
                           height: 114,
                           width: 320,
                           decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Color(0xFF006175),
-                                width: 1,
-        
-        
-                              ),
+                              // border: Border.all(
+                              //   color: Color(0xFF006175),
+                              //   width: 1,
+                              //
+                              //
+                              // ),
                               borderRadius: BorderRadius.circular(11)
                           ),
                           child: TextFormField(
@@ -291,9 +266,7 @@ class _Scrn6State extends State<Scrn6> {
                               fillColor: Color(0xFFF2F2F2),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
-                                // borderSide: BorderSide(
-                                //   width: 20,
-                                // ),
+                                borderSide: BorderSide.none,
                               ),
                             ),
                           ),
@@ -308,7 +281,7 @@ class _Scrn6State extends State<Scrn6> {
                         style: ElevatedButton.styleFrom(
                           overlayColor: Color(0xFF006175),
                           backgroundColor: Color(0xFF006175),
-                          padding: EdgeInsets.symmetric(horizontal: 140,vertical: 12),
+                          padding: EdgeInsets.symmetric(horizontal: 140,vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -328,7 +301,7 @@ class _Scrn6State extends State<Scrn6> {
                         )),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 55,top: 30,bottom: 50),
+                    padding: const EdgeInsets.only(left: 55,top: 30,bottom: 30),
                     child: InkWell(
                       child: Row(
                         children: [

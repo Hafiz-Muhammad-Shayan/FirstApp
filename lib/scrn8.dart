@@ -1,3 +1,4 @@
+import 'package:figmadesignui/main_navigator.dart';
 import 'package:figmadesignui/scrn9.dart';
 import 'package:flutter/material.dart';
 class Scrn8 extends StatefulWidget {
@@ -36,12 +37,12 @@ class _Scrn8State extends State<Scrn8> {
             ),
             Spacer(),
             Padding(
-              padding: const EdgeInsets.only(bottom: 210),
+              padding: const EdgeInsets.only(bottom: 170),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     overlayColor: Color(0xFF006175),
                     backgroundColor: Color(0xFF006175),
-                    padding: EdgeInsets.symmetric(horizontal: 138,vertical: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 138,vertical: 20),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -49,7 +50,7 @@ class _Scrn8State extends State<Scrn8> {
                   onPressed: (){
                     Navigator.push(
                         context, MaterialPageRoute(
-                      builder: (context) => Scrn9(),));
+                      builder: (context) => MainNavigator(),));
                   },
                   child: Text(
                     "Continue",

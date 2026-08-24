@@ -12,6 +12,7 @@ class _PersonsChatState extends State<PersonsChat> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         body: Column(
           children: [
             SizedBox(
@@ -415,16 +416,49 @@ class _PersonsChatState extends State<PersonsChat> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 Expanded(
-                  child: Container(
-                    height: 60,
-                    width: 50,
-                    color: Colors.red,
-                    child: TextFormField(
-
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          topRight: Radius.circular(10),
+                        )
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                      hintText: "Type a comment",
+                      hintStyle: TextStyle(
+                      color: Color(0xFF006175),
+                        fontWeight: FontWeight.w300,
+                        fontSize: 14,
+                      ),
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: IconButton(
+                            onPressed: (){},
+                            icon: Icon(
+                              Icons.add_box_outlined,
+                              color: Color(0xFF006175),
+                              size: 35,
+                            ),
+                        ),
+                      ),
+                      suffixIcon: IconButton(
+                          onPressed: (){},
+                          icon: Icon(
+                            Icons.send,
+                            color: Color(0xFF006175),
+                            size: 30,
+                          ),
+                      ),
                     ),
+
                   ),
                 ),
               ],
