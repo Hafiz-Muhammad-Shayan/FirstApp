@@ -36,6 +36,7 @@ class _Scrn14State extends State<Scrn14> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SizedBox(
           height: MediaQuery.of(context).size.height * 0.9,
@@ -88,7 +89,9 @@ class _Scrn14State extends State<Scrn14> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(
+                      height: 10,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(right: 10),
                     child: SingleChildScrollView(

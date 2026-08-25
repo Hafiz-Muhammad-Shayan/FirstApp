@@ -31,13 +31,14 @@ class _Scrn4State extends State<Scrn4> {
                         padding: EdgeInsets.only(top: 30,bottom: 30,left: 0),
                         child: Row(
                           children: [
-                            IconButton(
-                                onPressed: (){
-                                  Navigator.push(
-                                      context,MaterialPageRoute(
-                                      builder: (context) => Scrn9(),));
-                                },
-                                icon: Icon(Icons.arrow_back_ios)),
+                            InkWell(
+                                child: Icon(Icons.arrow_back_ios),
+                              onTap: (){
+                                Navigator.push(
+                                    context,MaterialPageRoute(
+                                  builder: (context) => Scrn9(),));
+                              },
+                            ),
                           ],
                         ),
                       ),

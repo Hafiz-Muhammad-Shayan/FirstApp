@@ -22,13 +22,15 @@ class _Scrn7State extends State<Scrn7> {
               padding: const EdgeInsets.only(left: 20,right: 20,top: 30),
               child: Column(
                 children: [
-                    Row(
+                  Row(
                       children: [
-                        IconButton(onPressed: (){},
-                            icon:Icon(Icons.arrow_back_ios)),
+                        InkWell(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                            child: Icon(Icons.arrow_back_ios)),
                       ],
                     ),
-          
                   Padding(
                     padding: const EdgeInsets.only(top: 30),
                     child: Row(

@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ActivityNote extends StatelessWidget {
-  const ActivityNote({super.key});
+  final String img;
+  final bool onlineStatus;
+  const ActivityNote({
+    super.key,
+    required this.img,
+    required this.onlineStatus,
+
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,16 +23,16 @@ class ActivityNote extends StatelessWidget {
             image: DecorationImage(
               fit: BoxFit.cover,
                 image: AssetImage(
-                  "assets/images/pic12.png",
+                  "$img",
                 )),
           ),
         ),
         Positioned(
-          top: 40,
-          left: 40,
+          top: 35,
+          left: 39,
           child: CircleAvatar(
             radius: 6,
-            backgroundColor: Color(0xFF21B014),
+            backgroundColor: onlineStatus ? Color(0xFF21B014) : Color(0xFFC80921) ,
           ),
         ),
       ],

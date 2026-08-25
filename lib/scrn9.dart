@@ -1,4 +1,5 @@
 import 'package:figmadesignui/scrn10.dart';
+import 'package:figmadesignui/scrn4.dart';
 import 'package:flutter/material.dart';
 class Scrn9 extends StatefulWidget {
   const Scrn9({super.key});
@@ -23,8 +24,13 @@ class _Scrn9State extends State<Scrn9> {
                 children: [
                   Row(
                     children: [
-                      IconButton(onPressed: (){},
-                          icon:Icon(Icons.arrow_back_ios)),
+                      InkWell(
+                        onTap: (){
+                          Navigator.push(context,
+                            MaterialPageRoute(
+                            builder: (context) => Scrn4(),));
+                        },
+                          child: Icon(Icons.arrow_back_ios)),
                     ],
                   ),
                   Padding(

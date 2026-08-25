@@ -1,5 +1,6 @@
 import 'package:figmadesignui/activity_note.dart';
 import 'package:figmadesignui/chat.dart';
+import 'package:figmadesignui/main_navigator.dart';
 import 'package:flutter/material.dart';
 
 class ChatScrn extends StatelessWidget {
@@ -15,15 +16,18 @@ class ChatScrn extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 30,
+                height: 40,
               ),
               Row(
                 children: [
-                  IconButton(
-                      onPressed: (){
-                        Navigator.pop(context);
-                      },
-                      icon: Icon(Icons.arrow_back_ios)),
+                  InkWell(
+                      child: Icon(Icons.arrow_back_ios),
+                  onTap: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(
+                          builder:(context) => MainNavigator(),
+                        ));
+                  },),
                   Spacer(),
                   Text(
                     "Chats",
@@ -41,6 +45,9 @@ class ChatScrn extends StatelessWidget {
 
 
                 ],
+              ),
+              SizedBox(
+                height: 20,
               ),
               Center(
                 child: Row(
@@ -99,27 +106,49 @@ class ChatScrn extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    ActivityNote(),
+                    ActivityNote(
+                      img: "assets/images/pic14.png",
+                      onlineStatus: true,
+                    ),
                     SizedBox(
                       width: 10,
                     ),
-                    ActivityNote(),
+                    ActivityNote(
+                      img: "assets/images/pic13.png",
+                      onlineStatus: true,
+
+
+                    ),
                     SizedBox(
                       width: 10,
                     ),
-                    ActivityNote(),
+                    ActivityNote(
+                      img: "assets/images/pic15.png",
+                      onlineStatus: false,
+
+
+                    ),
                     SizedBox(
                       width: 10,
                     ),
-                    ActivityNote(),
+                    ActivityNote(
+                      img: "assets/images/pic16.png",
+                      onlineStatus: true,
+                    ),
                     SizedBox(
                       width: 10,
                     ),
-                    ActivityNote(),
+                    ActivityNote(
+                      img: "assets/images/pic18.png",
+                      onlineStatus: true,
+                    ),
                     SizedBox(
                       width: 10,
                     ),
-                    ActivityNote(),
+                    ActivityNote(
+                      img: "assets/images/pic17.png",
+                      onlineStatus: true,
+                    ),
                   ],
                 ),
               ),

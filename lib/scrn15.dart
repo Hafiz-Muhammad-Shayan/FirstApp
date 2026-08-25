@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class Scrn15 extends StatefulWidget {
   final ImageProvider image;
   const Scrn15({
-    super.key, required this.image,
+    super.key,
+    required this.image,
 
   });
 
@@ -13,12 +14,9 @@ class Scrn15 extends StatefulWidget {
 }
 
 class _Scrn15State extends State<Scrn15> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SizedBox(
         height: MediaQuery.of(context).size.height * 1,
         width: MediaQuery.of(context).size.width * 1,

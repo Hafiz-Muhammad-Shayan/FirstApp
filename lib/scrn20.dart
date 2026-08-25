@@ -516,14 +516,18 @@ class _Scrn20State extends State<Scrn20> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: 40,
+                  ),
                   Row(
                     children: [
-                      IconButton(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => MainNavigator(),));
-                          },
-                          icon: Icon(Icons.arrow_back_ios)),
+                      InkWell(
+                          child: Icon(Icons.arrow_back_ios),
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => MainNavigator(),));
+                      },
+                      ),
                       Spacer(),
                       Text(
                         "Ofofo",
@@ -533,7 +537,11 @@ class _Scrn20State extends State<Scrn20> {
                         ),
                       ),
                       Spacer(),
+
                     ],
+                  ),
+                  SizedBox(
+                    height: 15,
                   ),
                   Row(
                     children: [
@@ -604,6 +612,31 @@ class _Scrn20State extends State<Scrn20> {
                             ),
                             Bluecard(
                               imgcir: "assets/images/pic21.png",
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Happening Now",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Ofofos going on at the moment",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ],
                             ),
                             SizedBox(
                               height: 20,

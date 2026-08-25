@@ -25,13 +25,14 @@ class _Scrn18State extends State<Scrn18> {
               padding: const EdgeInsets.symmetric(horizontal: 0),
               child: Row(
                 children: [
-                  IconButton(
-                      onPressed: (){
-                        Navigator.push(context,
-                            MaterialPageRoute(
-                              builder: (context) => MainNavigator(),));
-                      },
-                      icon: Icon(Icons.arrow_back_ios,size: 20,)),
+                   InkWell(
+                       child: Icon(Icons.arrow_back_ios,size: 20,),
+                   onTap: (){
+                     Navigator.push(context,
+                         MaterialPageRoute(
+                           builder: (context) => MainNavigator(),));
+                   },
+                   ),
                   Spacer(),
                   Text(
                     "My Profile",
@@ -74,17 +75,18 @@ class _Scrn18State extends State<Scrn18> {
                     height: 135,
                     width: 320,
                     decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color(0xFF006175),
-                          width: 1,
-
-
-                        ),
+                        // border: Border.all(
+                        //   color: Color(0xFF006175),
+                        //   width: 1,
+                        //
+                        //
+                        // ),
                         borderRadius: BorderRadius.circular(11)
                     ),
                     child: TextFormField(
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
+
                         contentPadding: EdgeInsets.only(bottom: 133),
                         isDense: true,
                         filled: true,
@@ -114,9 +116,7 @@ class _Scrn18State extends State<Scrn18> {
                         fillColor: Color(0xFFF2F2F2),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          // borderSide: BorderSide(
-                          //   width: 20,
-                          // ),
+                          borderSide: BorderSide.none,
                         ),
                       ),
                     ),
@@ -141,28 +141,15 @@ class _Scrn18State extends State<Scrn18> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 5),
-              child: Container(
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Color(0xFF006175),
-                      width: 1,
-
-
-                    ),
-                    borderRadius: BorderRadius.circular(11)
-                ),
-                child: TextFormField(
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.only(bottom: 84),
-                    filled: true,
-                    fillColor: Color(0xFFF2F2F2),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      // borderSide: BorderSide(
-                      //   width: 20,
-                      // ),
-                    ),
+              child: TextFormField(
+                keyboardType: TextInputType.name,
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.only(bottom: 84),
+                  filled: true,
+                  fillColor: Color(0xFFF2F2F2),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
                   ),
                 ),
               ),
@@ -184,28 +171,15 @@ class _Scrn18State extends State<Scrn18> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 5),
-              child: Container(
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Color(0xFF006175),
-                      width: 1,
-
-
-                    ),
-                    borderRadius: BorderRadius.circular(11)
-                ),
-                child: TextFormField(
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.only(bottom: 49),
-                    filled: true,
-                    fillColor: Color(0xFFF2F2F2),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      // borderSide: BorderSide(
-                      //   width: 20,
-                      // ),
-                    ),
+              child: TextFormField(
+                keyboardType: TextInputType.name,
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.only(bottom: 49),
+                  filled: true,
+                  fillColor: Color(0xFFF2F2F2),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
                   ),
                 ),
               ),

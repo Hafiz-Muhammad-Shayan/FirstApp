@@ -25,12 +25,17 @@ class _Scrn6State extends State<Scrn6> {
                 children: [
                   Row(
                     children: [
-                      IconButton(
-                          onPressed: (){
-                            Navigator.pop(context);
+
+                       InkWell(
+                          onTap: (){
+                          Navigator.pop(context);
                           },
-                          icon: Icon(Icons.arrow_back_ios)),
+                           child: Icon(Icons.arrow_back_ios)),
+
                     ],
+                  ),
+                  SizedBox(
+                    height: 30,
                   ),
                   Row(
                     children: [
@@ -150,7 +155,7 @@ class _Scrn6State extends State<Scrn6> {
                                   borderRadius: BorderRadius.circular(11)
                               ),
                               child: TextFormField(
-                                keyboardType: TextInputType.emailAddress,
+                                keyboardType: TextInputType.number,
                                 decoration: InputDecoration(
                                   suffixIcon: Icon(
                                       Icons.arrow_drop_down_rounded,
@@ -301,7 +306,7 @@ class _Scrn6State extends State<Scrn6> {
                         )),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 55,top: 30,bottom: 30),
+                    padding: const EdgeInsets.only(left: 55,top: 30,bottom: 20),
                     child: InkWell(
                       child: Row(
                         children: [

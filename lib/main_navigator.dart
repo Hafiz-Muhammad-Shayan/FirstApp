@@ -56,7 +56,7 @@ class _MainNavigatorState extends State<MainNavigator> {
                 label: "",
               ),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.add_box_outlined,),
+                  icon: Icon(Icons.add_box,),
                 label: "",
               ),
               BottomNavigationBarItem(

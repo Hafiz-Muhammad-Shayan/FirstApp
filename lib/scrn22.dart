@@ -26,13 +26,12 @@ class _Scrn22State extends State<Scrn22> {
                 padding: const EdgeInsets.symmetric(horizontal: 0),
                 child: Row(
                   children: [
-                    IconButton(
-                        onPressed: (){
-                          Navigator.push(context,
-                              MaterialPageRoute(
-                                builder: (context) => Scrn21(),));
-                        },
-                        icon: Icon(Icons.arrow_back_ios,size: 20,)),
+                    InkWell(
+                        child: Icon(Icons.arrow_back_ios,size: 20,),
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
+                    ),
                     Spacer(),
                     Text(
                       "My Profile",
@@ -110,27 +109,14 @@ class _Scrn22State extends State<Scrn22> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 5),
-                child: Container(
-                  decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Color(0xFF006175),
-                        width: 1,
-          
-          
-                      ),
-                      borderRadius: BorderRadius.circular(11)
-                  ),
-                  child: TextFormField(
-                    keyboardType: TextInputType.name,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Color(0xFFF2F2F2),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        // borderSide: BorderSide(
-                        //   width: 20,
-                        // ),
-                      ),
+                child: TextFormField(
+                  keyboardType: TextInputType.name,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Color(0xFFF2F2F2),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide.none,
                     ),
                   ),
                 ),
@@ -152,27 +138,14 @@ class _Scrn22State extends State<Scrn22> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 5),
-                child: Container(
-                  decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Color(0xFF006175),
-                        width: 1,
-          
-          
-                      ),
-                      borderRadius: BorderRadius.circular(11)
-                  ),
-                  child: TextFormField(
-                    keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Color(0xFFF2F2F2),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        // borderSide: BorderSide(
-                        //   width: 20,
-                        // ),
-                      ),
+                child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Color(0xFFF2F2F2),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide.none,
                     ),
                   ),
                 ),
@@ -199,12 +172,12 @@ class _Scrn22State extends State<Scrn22> {
                           width: 131,
                           height: 49,
                           decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Color(0xFF006175),
-                                width: 1,
-          
-          
-                              ),
+                              // border: Border.all(
+                              //   color: Color(0xFF006175),
+                              //   width: 1,
+                              //
+                              //
+                              // ),
                               borderRadius: BorderRadius.circular(11)
                           ),
                           child: TextFormField(
@@ -218,9 +191,7 @@ class _Scrn22State extends State<Scrn22> {
                               fillColor: Color(0xFFF2F2F2),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
-                                // borderSide: BorderSide(
-                                //   width: 20,
-                                // ),
+                                borderSide: BorderSide.none,
                               ),
                             ),
                           ),
@@ -255,12 +226,12 @@ class _Scrn22State extends State<Scrn22> {
                               width: 131,
                               height: 49,
                               decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Color(0xFF006175),
-                                    width: 1,
-          
-          
-                                  ),
+                                  // border: Border.all(
+                                  //   color: Color(0xFF006175),
+                                  //   width: 1,
+                                  //
+                                  //
+                                  // ),
                                   borderRadius: BorderRadius.circular(11)
                               ),
                               child: TextFormField(
@@ -274,9 +245,7 @@ class _Scrn22State extends State<Scrn22> {
                                   fillColor: Color(0xFFF2F2F2),
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    // borderSide: BorderSide(
-                                    //   width: 20,
-                                    // ),
+                                    borderSide: BorderSide.none,
                                   ),
                                 ),
                               ),
@@ -312,12 +281,12 @@ class _Scrn22State extends State<Scrn22> {
                       height: 114,
                       width: 320,
                       decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Color(0xFF006175),
-                            width: 1,
-          
-          
-                          ),
+                          // border: Border.all(
+                          //   color: Color(0xFF006175),
+                          //   width: 1,
+                          //
+                          //
+                          // ),
                           borderRadius: BorderRadius.circular(11)
                       ),
                       child: TextFormField(
@@ -328,9 +297,7 @@ class _Scrn22State extends State<Scrn22> {
                           fillColor: Color(0xFFF2F2F2),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            // borderSide: BorderSide(
-                            //   width: 20,
-                            // ),
+                            borderSide: BorderSide.none,
                           ),
                         ),
                       ),

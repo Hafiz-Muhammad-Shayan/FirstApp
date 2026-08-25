@@ -16,7 +16,7 @@ class CardWidget extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    String image1 = "assets/images/pic5.png";
+    // String image1 = "assets/images/pic5.png";
     return InkWell(
       onTap: onTap,
       child: Container(

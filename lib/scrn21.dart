@@ -27,13 +27,14 @@ class _Scrn21State extends State<Scrn21> {
                 padding: const EdgeInsets.symmetric(horizontal: 0),
                 child: Row(
                   children: [
-                    IconButton(
-                        onPressed: (){
-                          Navigator.push(context,
-                              MaterialPageRoute(
-                                  builder: (context) => MainNavigator(),));
-                        },
-                        icon: Icon(Icons.arrow_back_ios,size: 20,)),
+                    InkWell(
+                        child: Icon(Icons.arrow_back_ios,size: 20,),
+                      onTap: (){
+                        Navigator.push(context,
+                            MaterialPageRoute(
+                              builder: (context) => MainNavigator(),));
+                      },
+                    ),
                     Spacer(),
                     Text(
                       "My Profile",
@@ -258,18 +259,19 @@ class _Scrn21State extends State<Scrn21> {
               SizedBox(
                 height: 10,
               ),
+              // 360 695
               Rowcontainers(
-                inpimg1: "assets/images/post1.png",
-                inpimg2: "assets/images/post2.png",
-                inpimg3: "assets/images/post3.png",
+                inpimg1: "assets/images/post4.png",
+                inpimg2: "assets/images/post5.png",
+                inpimg3: "assets/images/post6.png",
               ),
               SizedBox(
                 height: 10,
               ),
               Rowcontainers(
-                inpimg1: "assets/images/post1.png",
-                inpimg2: "assets/images/post2.png",
-                inpimg3: "assets/images/post3.png",
+                inpimg1: "assets/images/post10.png",
+                inpimg2: "assets/images/post8.png",
+                inpimg3: "assets/images/post11.png",
               ),
               SizedBox(
                 height: 10,
