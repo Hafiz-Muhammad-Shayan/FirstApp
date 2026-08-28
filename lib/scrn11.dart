@@ -24,12 +24,11 @@ class _Scrn11State extends State<Scrn11> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 40),
+                  padding: const EdgeInsets.only(top: 70,left: 10),
                   child: Row(
                     children: [
-                      IconButton(
-                          onPressed: (){},
-                          icon: Icon(Icons.arrow_back_ios)),
+                      InkWell(
+                          child: Icon(Icons.arrow_back_ios,size: 25,)),
                     ],
                   ),
                 ),
@@ -60,6 +59,9 @@ class _Scrn11State extends State<Scrn11> {
                       ),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),

@@ -12,7 +12,7 @@ class _Scrn16State extends State<Scrn16> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [

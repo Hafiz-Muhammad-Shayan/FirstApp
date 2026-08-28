@@ -24,8 +24,11 @@ class _Scrn12State extends State<Scrn12> {
                 children: [
                   Row(
                     children: [
-                      IconButton(onPressed: (){},
-                          icon:Icon(Icons.arrow_back_ios)),
+                      InkWell(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                          child: Icon(Icons.arrow_back_ios)),
                     ],
                   ),
                   Padding(

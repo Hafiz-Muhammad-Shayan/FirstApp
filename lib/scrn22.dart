@@ -181,7 +181,7 @@ class _Scrn22State extends State<Scrn22> {
                               borderRadius: BorderRadius.circular(11)
                           ),
                           child: TextFormField(
-                            keyboardType: TextInputType.emailAddress,
+                            keyboardType: TextInputType.number,
                             decoration: InputDecoration(
                               suffixIcon: Icon(
                                 Icons.arrow_drop_down_rounded,

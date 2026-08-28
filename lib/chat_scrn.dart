@@ -21,7 +21,7 @@ class ChatScrn extends StatelessWidget {
               Row(
                 children: [
                   InkWell(
-                      child: Icon(Icons.arrow_back_ios),
+                      child: Icon(Icons.arrow_back_ios,size: 25,fontWeight: FontWeight.bold,),
                   onTap: (){
                     Navigator.push(context,
                         MaterialPageRoute(

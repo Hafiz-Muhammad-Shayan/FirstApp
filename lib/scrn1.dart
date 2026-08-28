@@ -71,7 +71,7 @@ class _Scrn1State extends State<Scrn1> {
                        "Connecting with Family and Friends provides a sense of belonging and security ",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          color: Colors.grey,
+                          // color: Colors.grey,
                           fontSize: 16,
                         ),
                    ),

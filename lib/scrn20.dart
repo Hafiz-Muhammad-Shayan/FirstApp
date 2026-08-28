@@ -522,7 +522,7 @@ class _Scrn20State extends State<Scrn20> {
                   Row(
                     children: [
                       InkWell(
-                          child: Icon(Icons.arrow_back_ios),
+                          child: Icon(Icons.arrow_back_ios,size: 25,fontWeight: FontWeight.bold,),
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) => MainNavigator(),));
@@ -659,7 +659,7 @@ class _Scrn20State extends State<Scrn20> {
               ),
             ),
             Positioned(
-              top: 530,
+              top: 580,
               left: 280,
               child: FloatingActionButton(
                 backgroundColor: Color(0xFF006175),

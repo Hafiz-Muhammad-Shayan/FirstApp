@@ -66,7 +66,7 @@ class _Scrn2State extends State<Scrn2> {
                       "Allowing you to make new Friends is our Number one priority..... ",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
-                        color: Colors.grey,
+                        // color: Colors.grey,
                         fontSize: 16,
                       ),
                     ),

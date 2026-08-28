@@ -61,7 +61,7 @@ class _Scrn3State extends State<Scrn3> {
                 "Let your voice be heard on the internet through the OFOFO features on the App without restrictions",
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
-                  color: Colors.grey,
+                  // color: Colors.grey,
                   fontSize: 16,
                 ),
               ),

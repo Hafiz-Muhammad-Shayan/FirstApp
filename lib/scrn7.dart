@@ -107,7 +107,7 @@ class _Scrn7State extends State<Scrn7> {
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
                     child: TextFormField(
-                      keyboardType: TextInputType.name,
+                      keyboardType: TextInputType.visiblePassword,
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Color(0xFFF2F2F2),

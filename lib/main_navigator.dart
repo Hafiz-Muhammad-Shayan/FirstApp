@@ -25,9 +25,7 @@ class _MainNavigatorState extends State<MainNavigator> {
     Scrn21(),
 
   ];
-  // openNotificationScn(){
-  //   Navigator.push(context, MaterialPageRoute(builder: (context) => Scrn16(),));
-  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
